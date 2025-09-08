@@ -13,6 +13,4 @@ xgboost==1.7.6
 yellowbrick==1.5 # can be removed from requirements before deployment
 Pillow==10.0.1 # can be removed from requirements before deployment
 nbformat==5.10.4 
-# statistics
-pingouin==0.5.5
-scipy==1.16.1
+
