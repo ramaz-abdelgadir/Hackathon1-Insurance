@@ -325,7 +325,7 @@ Purpose: Allow technical and non-technical users to explore the data dynamically
 
 
 ## Unfixed Bugs
-
+At this stage of the project, no unfixed bugs were encountered. All implemented scripts, transformations, and dashboard features worked as expected within the scope of the dataset and chosen tools.
 
 
 ## Development Roadmap
@@ -422,13 +422,10 @@ Project Documentation:
 
 Guidance and draft structuring supported by OpenAI’s ChatGPT, used for ideation, design thinking, documentation writing, and code optimisation. All AI-generated content was reviewed and adapted to ensure accuracy, context relevance, and originality.
 
-## Content
-The text for the Home page was taken from Wikipedia Article A
-Instructions on how to implement form validation on the Sign-Up page was taken from Specific YouTube Tutorial
-The icons in the footer were taken from Font Awesome
-
 
 ## Media
+All images are used under their respective open-source licenses, which allow redistribution and use for educational/non-commercial purposes. E.g. ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
 
 
 
