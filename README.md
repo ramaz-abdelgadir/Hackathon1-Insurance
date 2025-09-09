@@ -11,14 +11,9 @@ This project analyses a health insurance dataset to uncover the key factors infl
 
 * Create derived variables such as age_bracket, and bmi_category, to support deeper insights.
 
-* ### Identify outliers and anomalies in medical charges and BMI.
-
 * Test hypotheses (e.g., Do smokers pay more?, Does BMI drive costs?, Are there regional differences?).
 
 * Develop interactive dashboards in Power BI for storytelling and exploration.
-
-https://github.com/Code-Institute-Solutions/da-README-template?tab=readme-ov-file
-
 
 
 ## Dataset Content
@@ -115,15 +110,6 @@ Run regression analysis including children as an explanatory variable.
 
 Compare distributions across families of different sizes.
 
-## Hypothesis 6: Outliers distort average charges
-
-Validation:
-
-## Identify outliers in charges and bmi using the IQR method.
-
-## Recalculate averages with and without outliers.
-
-## Provide dashboard toggles/slicers (is_outlier_charges = False) to explore their effect interactively.
 
 
 ## Project Plan
@@ -169,8 +155,6 @@ Correlation analysis between continuous variables (age, BMI, charges).
 Hypothesis Testing
 
 Tested assumptions about drivers of insurance charges.
-
-Outlier sensitivity checks performed to validate robustness of results.
 
 Data Visualisation & Storytelling
 
@@ -262,16 +246,86 @@ All code, reports, and dashboards follow open-source best practices for transpar
 
 
 ## Dashboard Design
-List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-How were data insights communicated to technical and non-technical audiences?
-Explain how the dashboard was designed to communicate complex data insights to different audiences.
+🔹 Dashboard Content (Blocks & Widgets)
+
+Header
+
+Dashboard title: “Health Insurance Charges Dashboard”
+
+Last refresh date/time (automatically shown in Power BI if published).
+
+KPI Block (Top Row)
+
+Card widgets:
+
+Total Charges (£)
+
+Average Charge (£)
+
+% Smokers
+
+Average BMI
+
+Purpose: Provide immediate “headline” numbers for decision-makers.
+
+Comparisons Block (Middle Row)
+
+Clustered Bar Chart: Average Charges by Smoker
+
+Clustered Bar Chart: Average Charges by Region
+
+Clustered Bar Chart: Average Charges by Sex
+
+Purpose: Show how demographic and lifestyle factors impact costs.
+
+Drivers & Distribution Block (Bottom Row)
+
+Scatter Plot: BMI vs Charges (colour = smoker, size = age)
+
+Box Plot (Custom Visual): Charges by Smoker (distribution and outliers)
+
+Column Chart: Average Charges by Age Band
+
+Purpose: Highlight relationships and underlying drivers of higher charges.
+
+Interactivity Widgets (Sidebar / Filters)
+
+Slicers (checkbox/dropdown):
+
+Smoker (Yes/No)
+
+Sex (Male/Female)
+
+Region (Northeast, Northwest, Southeast, Southwest)
+
+Age Band (0–17, 18–29, 30–44, 45–59, 60+)
+
+BMI Category (Underweight, Normal, Overweight, Obese)
+
+Outlier flag (Include/Exclude)
+
+Purpose: Allow technical and non-technical users to explore the data dynamically.
+
+🔹 Communicating Insights
+* For Non-Technical Audiences (Executives / Judges):
+
+* KPI cards and bar charts provide clear, instantly understandable comparisons.
+
+* Colours (e.g., red for smokers, blue for non-smokers) reinforce group differences visually.
+
+* Simple, plain-English titles (“Average Charge by Region (£)”) make visuals self-explanatory.
+
+* For Technical Audiences (Analysts / Data Scientists):
+
+* Scatter plots and box plots show variability, correlations, and outliers.
+
+* Filters (slicers) allow deep dives by age, BMI, smoker, and region.
+
+
 
 
 ## Unfixed Bugs
-Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-Did you recognise gaps in your knowledge, and how did you address them?
-If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+
 
 
 ## Development Roadmap
@@ -280,16 +334,19 @@ What new skills or tools do you plan to learn next based on your project experie
 
 
 ## Deployment
-Heroku
-The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-Set the runtime.txt Python version to a Heroku-20 stack currently supported version.
-The project was deployed to Heroku using the following steps.
-Log in to Heroku and create an App
-From the Deploy tab, select GitHub as the deployment method.
-Select your repository name and click Search. Once it is found, click Connect.
-Select the branch you want to deploy, then click Deploy Branch.
-The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-If the slug size is too large then add large files not required for the app to the .slugignore file.
+Developed in Jupyter Notebooks and VS Code using pandas, numpy, matplotlib, seaborn, and plotly.
+
+Scripts and notebooks stored in the project’s GitHub repository under /src and /notebooks.
+
+Power BI (Dashboard):
+
+The cleaned dataset (insurance_clean.csv) was imported into Power BI Desktop.
+
+Dashboards were designed locally and saved as .pbix files under /dashboards.
+
+Visuals include KPIs, bar charts, scatter plots, box plots, and slicers for interactive filtering.
+
+
 
 
 ## Main Data Analysis Libraries
@@ -372,9 +429,12 @@ The icons in the footer were taken from Font Awesome
 
 
 ## Media
-The photos used on the home and sign-up page are from This Open-Source site
-The images used for the gallery page were taken from this other open-source site
+
 
 
 ## Acknowledgements (optional)
-Thank the people who provided support through this project.
+Peers and Teammates — for collaboration, idea-sharing, and constructive feedback that improved the quality of the project.
+
+Hackathon Organisers / College Staff — for providing the opportunity, resources, and a structured environment to work on this challenge.
+
+Generative AI Tools (ChatGPT) — used to support ideation, code optimisation, documentation structuring, and design thinking, with all outputs carefully reviewed for accuracy and adapted to fit the project’s needs.
