@@ -328,11 +328,6 @@ Purpose: Allow technical and non-technical users to explore the data dynamically
 At this stage of the project, no unfixed bugs were encountered. All implemented scripts, transformations, and dashboard features worked as expected within the scope of the dataset and chosen tools.
 
 
-## Development Roadmap
-What challenges did you face, and what strategies were used to overcome these challenges?
-What new skills or tools do you plan to learn next based on your project experience?
-
-
 ## Deployment
 Developed in Jupyter Notebooks and VS Code using pandas, numpy, matplotlib, seaborn, and plotly.
 
@@ -435,3 +430,20 @@ Peers and Teammates — for collaboration, idea-sharing, and constructive feedba
 Hackathon Organisers / College Staff — for providing the opportunity, resources, and a structured environment to work on this challenge.
 
 Generative AI Tools (ChatGPT) — used to support ideation, code optimisation, documentation structuring, and design thinking, with all outputs carefully reviewed for accuracy and adapted to fit the project’s needs.
+
+## Conclusion
+This health insurance project demonstrated the full cycle of a data analytics workflow — from data cleaning and transformation through to exploration, analysis, and visual storytelling. By combining Python libraries (pandas, seaborn, matplotlib, plotly) with Power BI dashboards, the project delivered insights that are accessible to both technical and non-technical audiences.
+
+Key findings included:
+
+Smoker status is the single largest driver of higher charges, with smokers paying significantly more than non-smokers.
+
+BMI and age both show strong positive relationships with charges, particularly among smokers.
+
+Regional variation exists, with some regions (e.g., Southeast) incurring higher average costs.
+
+Beyond analysis, the project emphasised documentation, reproducibility, and storytelling. ETL pipelines were made transparent and reusable, dashboards were designed for interactivity and clarity, and business requirements were mapped directly to visualisations.
+
+The project also highlighted advanced dashboard features.
+
+Overall, this project shows how structured analysis and thoughtful communication can transform raw data into actionable insights, supporting decision-making in contexts such as insurance pricing and customer segmentation.
